@@ -33,7 +33,7 @@
     "@remix-gospel-stack/eslint-config": "workspace:*",
     "@remix-gospel-stack/tsconfig": "workspace:*",
     "@types/node": "^22.7.0",
-    "dotenv-cli": "^7.4.2",
+    "dotenv-cli": "^8.0.0",
     "prisma": "^5.20.0",
     "rimraf": "^6.0.1",
     "tsup": "^8.3.0",
