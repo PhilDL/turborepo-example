@@ -20,7 +20,7 @@
     "typescript": "^5.6.2",
     "vite": "^5.4.8",
     "vite-tsconfig-paths": "^5.0.1",
-    "vitest": "^2.1.1"
+    "vitest": "^3.0.0"
   },
   "exports": {
     "./package.json": "./package.json",
