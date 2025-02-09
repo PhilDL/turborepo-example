@@ -222,7 +222,7 @@ importers:
         version: 4.3.1(vite@5.4.8(@types/node@22.7.0))
       '@vitest/coverage-v8':
         specifier: ^2.1.1
-        version: 2.1.1(vitest@2.1.1(@types/node@22.7.0)(happy-dom@15.7.4)(msw@2.4.9(typescript@5.6.2)))
+        version: 2.1.1(vitest@2.1.1(@types/node@22.7.0)(happy-dom@17.0.2)(msw@2.4.9(typescript@5.6.2)))
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)
@@ -242,8 +242,8 @@ importers:
         specifier: ^11.0.0
         version: 11.0.0
       happy-dom:
-        specifier: ^15.7.4
-        version: 15.7.4
+        specifier: ^17.0.0
+        version: 17.0.2
       msw:
         specifier: ^2.3.1
         version: 2.4.9(typescript@5.6.2)
@@ -285,7 +285,7 @@ importers:
         version: 5.0.1(typescript@5.6.2)(vite@5.4.8(@types/node@22.7.0))
       vitest:
         specifier: ^2.1.1
-        version: 2.1.1(@types/node@22.7.0)(happy-dom@15.7.4)(msw@2.4.9(typescript@5.6.2))
+        version: 2.1.1(@types/node@22.7.0)(happy-dom@17.0.2)(msw@2.4.9(typescript@5.6.2))
 
   apps/remix-vercel:
     dependencies:
@@ -501,7 +501,7 @@ importers:
         version: 5.0.1(typescript@5.6.2)(vite@5.4.8(@types/node@22.7.0))
       vitest:
         specifier: ^2.1.1
-        version: 2.1.1(@types/node@22.7.0)(happy-dom@15.7.4)(msw@2.4.9(typescript@5.6.2))
+        version: 2.1.1(@types/node@22.7.0)(happy-dom@17.0.2)(msw@2.4.9(typescript@5.6.2))
 
   packages/ui:
     dependencies:
@@ -3986,10 +3986,6 @@ packages:
     resolution: {integrity: sha512-0/r0MySGYG8YqlayBZ6MuCfECmHFdJ5qyPh8s8wa5Hnm6SaFLSK1VYCbj+NKp090Nm1caZhD+QTnmxO7esYGyQ==}
     engines: {node: '>=10.13.0'}
 
-  entities@4.5.0:
-    resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
-    engines: {node: '>=0.12'}
-
   envinfo@7.14.0:
     resolution: {integrity: sha512-CO40UI41xDQzhLB1hWyqUKgFhs250pNcGbyGKe1l/e4FSaI/+YE4IMG76GDt0In67WLPACIITC+sOi08x4wIvg==}
     engines: {node: '>=4'}
@@ -4551,8 +4547,8 @@ packages:
     engines: {node: '>=0.4.7'}
     hasBin: true
 
-  happy-dom@15.7.4:
-    resolution: {integrity: sha512-r1vadDYGMtsHAAsqhDuk4IpPvr6N8MGKy5ntBo7tSdim+pWDxus2PNqOcOt8LuDZ4t3KJHE+gCuzupcx/GKnyQ==}
+  happy-dom@17.0.2:
+    resolution: {integrity: sha512-PWXllOadphR7angD3ndG5/Ax3yg1PFRvnN8Zu+xVtRsZjJE4RtJF1RBeWN9JFvF5EJmHOCiekdYVTxJr2NBibA==}
     engines: {node: '>=18.0.0'}
 
   has-bigints@1.0.2:
@@ -5137,6 +5133,7 @@ packages:
 
   lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    deprecated: This package is deprecated. Use the optional chaining (?.) operator instead.
 
   lodash.isplainobject@4.0.6:
     resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
@@ -10257,7 +10254,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/coverage-v8@2.1.1(vitest@2.1.1(@types/node@22.7.0)(happy-dom@15.7.4)(msw@2.4.9(typescript@5.6.2)))':
+  '@vitest/coverage-v8@2.1.1(vitest@2.1.1(@types/node@22.7.0)(happy-dom@17.0.2)(msw@2.4.9(typescript@5.6.2)))':
     dependencies:
       '@ampproject/remapping': 2.3.0
       '@bcoe/v8-coverage': 0.2.3
@@ -10271,7 +10268,7 @@ snapshots:
       std-env: 3.7.0
       test-exclude: 7.0.1
       tinyrainbow: 1.2.0
-      vitest: 2.1.1(@types/node@22.7.0)(happy-dom@15.7.4)(msw@2.4.9(typescript@5.6.2))
+      vitest: 2.1.1(@types/node@22.7.0)(happy-dom@17.0.2)(msw@2.4.9(typescript@5.6.2))
     transitivePeerDependencies:
       - supports-color
 
@@ -11123,8 +11120,6 @@ snapshots:
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.2.1
-
-  entities@4.5.0: {}
 
   envinfo@7.14.0: {}
 
@@ -12006,9 +12001,8 @@ snapshots:
     optionalDependencies:
       uglify-js: 3.19.3
 
-  happy-dom@15.7.4:
+  happy-dom@17.0.2:
     dependencies:
-      entities: 4.5.0
       webidl-conversions: 7.0.0
       whatwg-mimetype: 3.0.0
 
@@ -15006,7 +15000,7 @@ snapshots:
       '@types/node': 22.7.0
       fsevents: 2.3.3
 
-  vitest@2.1.1(@types/node@22.7.0)(happy-dom@15.7.4)(msw@2.4.9(typescript@5.6.2)):
+  vitest@2.1.1(@types/node@22.7.0)(happy-dom@17.0.2)(msw@2.4.9(typescript@5.6.2)):
     dependencies:
       '@vitest/expect': 2.1.1
       '@vitest/mocker': 2.1.1(@vitest/spy@2.1.1)(msw@2.4.9(typescript@5.6.2))(vite@5.4.8(@types/node@22.7.0))
@@ -15029,7 +15023,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.7.0
-      happy-dom: 15.7.4
+      happy-dom: 17.0.2
     transitivePeerDependencies:
       - less
       - lightningcss
