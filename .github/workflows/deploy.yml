@@ -23,7 +23,7 @@ jobs:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4.0.0
+      - uses: pnpm/action-setup@v4.1.0
 
       - name: ⎔ Setup Node.js
         uses: actions/setup-node@v4
@@ -50,7 +50,7 @@ jobs:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4.0.0
+      - uses: pnpm/action-setup@v4.1.0
 
       - name: ⎔ Setup Node.js
         uses: actions/setup-node@v4
@@ -89,7 +89,7 @@ jobs:
       - name: 🏄 Copy test env vars to Package
         run: cp .env.example packages/database/.env
 
-      - uses: pnpm/action-setup@v4.0.0
+      - uses: pnpm/action-setup@v4.1.0
 
       - name: ⎔ Setup Node.js
         uses: actions/setup-node@v4
@@ -117,7 +117,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4.0.0
+      - uses: pnpm/action-setup@v4.1.0
 
       - name: ⎔ Setup Node.js
         uses: actions/setup-node@v4
